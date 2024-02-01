@@ -1,11 +1,11 @@
 
-# Lovely Chain Blockchain Node
+# Hybride Blockchain Node
 
-This project aims to provide installation, running, and maintenance capabilities of **Lovely Chain validator node** for potential and existing Lovely Chain Blockchain backers. The consensus structure of this chain is delegated proof of stake "DPos" and is governed by the symbiosis of Lovely Chain's implementation of go-ethereum and our system contracts [https://github.com/Lovely-Chain/system-contracts.git]. This repository has multiple release candidates inline so we recommend checking for updates for better functions and stability.
+This project aims to provide installation, running, and maintenance capabilities of **Hybride validator node** for potential and existing Hybride Blockchain backers. The consensus structure of this chain is delegated proof of stake "DPos" and is governed by the symbiosis of Hybride's implementation of go-ethereum and our system contracts. This repository has multiple release candidates inline so we recommend checking for updates for better functions and stability.
 
 
 ## Acknowledgements
-Lovely Chain blockchain node inherits its core components from heco-chain project by stars-lab which itself is based on geth by the Ethereum foundation.
+Hybride blockchain node inherits its core components from heco-chain project by stars-lab which itself is based on geth by the Ethereum foundation.
 
  - [Go ethereum](https://github.com/ethereum/go-ethereum)
  - [heco-chain](https://github.com/stars-labs/heco-chain)
@@ -20,17 +20,17 @@ We acknowledge and actively contribute to decentralization causes and derivative
 
 **Persistent Storage:** 25GB minimum, 100GB high-speed SSD recommended
 
-**Note regarding use of GPUs -** GPUs are primarily used in POW consensus chains. Being a DPos Lovely Chain chain has not only more TPS and fast block production but also doesn't need a GPU altogether for its purpose.
+**Note regarding use of GPUs -** GPUs are primarily used in POW consensus chains. Being a DPos Hybride chain has not only more TPS and fast block production but also doesn't need a GPU altogether for its purpose.
 
 
 
 ## How to become a validator
-To back the Lovely Chain blockchain you can become a validator. Full flow to become a validator, you must:
+To back the Hybride blockchain you can become a validator. Full flow to become a validator, you must:
 * Install this package **([See Installation](#installation))**
 * Download your newly created validator wallet from your server and import it into your metamask or preferred wallet. Fund this account with the appropriate MNZ tokens needed to become a validator. Example command to download the wallet on your local PC. Only works for UNIX-based OSes or on any environment that can run the OpenSSH package:
 ```bash
-  scp -r root@<server_ip>:/root/Core-Blockchain/chaindata/node1/keystore
-  scp root@<server_ip>:/root/Core-Blockchain/chaindata/node1/pass.txt
+  scp -r root@<server_ip>:/root/hybride-node/chaindata/node1/keystore
+  scp root@<server_ip>:/root/hybride-node/chaindata/node1/pass.txt
 ```
 * On your server, start the node that you just installed **([See Usage/Example](#usageexamples))**
 * Once the node is started and confirmation is seen on your terminal, open the interactive console by attaching tmux session **([See Usage/Example](#usageexamples))**
@@ -46,7 +46,7 @@ To back the Lovely Chain blockchain you can become a validator. Full flow to bec
 If failed you may end up losing your stake in the blockchain and your staked coins, if any. You'll be jailed at once with no return point by the blockchain if found down/dead. You'll be responsible for chain data corruption on your node, frying up your motherboard, or damaging yourself and your surroundings. 
 
 
-To install the Lovely Chain validator node in ubuntu linux
+To install the Hybride validator node in ubuntu linux
 ```bash
   sudo -i
   apt update && apt upgrade
@@ -58,8 +58,8 @@ Skip the above commands if you have already updated the system and installed the
 Connect again to your server after reboot
 ```bash
   sudo -i
-  git clone https://github.com/Lovely-Chain/core-blockchain.git
-  cd core-blockchain
+  git clone https://github.com/marvelous-bot/hybride-node.git
+  cd hybride-node
   ./node-setup --validator 1
 ```
 After you run node-setup, follow the on-screen instructions carefully and you'll get confirmation that the node was successfully installed on your system.
