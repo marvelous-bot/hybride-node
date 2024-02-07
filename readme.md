@@ -3,15 +3,6 @@
 
 This project aims to provide installation, running, and maintenance capabilities of **Hybride validator node** for potential and existing Hybride Blockchain backers. The consensus structure of this chain is delegated proof of stake "DPos" and is governed by the symbiosis of Hybride's implementation of go-ethereum and our system contracts. This repository has multiple release candidates inline so we recommend checking for updates for better functions and stability.
 
-
-## Acknowledgements
-Hybride blockchain node inherits its core components from heco-chain project by stars-lab which itself is based on geth by the Ethereum foundation.
-
- - [Go ethereum](https://github.com/ethereum/go-ethereum)
- - [heco-chain](https://github.com/stars-labs/heco-chain)
-
-The revolution started by Bitcoin and later fueled by Ethereum Foundation has launched a wide array of technological advancements and applications.
-We acknowledge and actively contribute to decentralization causes and derivatives.
 ## System Requirements
 
 **Operating System:** Ubuntu >= 20.04 LTS
